@@ -7,9 +7,12 @@
 const config = require("./config");
 const utils = require("./utils");
 
-Promise.all([
-    utils.ensureDirectory(config.COMPONENT_LOCATION),
-    utils.ensureDirectory(config.COMPONENT_LOCATION_TEMP),
-]).then(() => {
+async function init() {
+    await Promise.all([
+        utils.ensureDirectory(config.COMPONENT_LOCATION),
+        utils.ensureDirectory(config.COMPONENT_LOCATION_TEMP),
+    ]);
     console.log("Ensured that all workspace directories exist.");
-});
+}
+
+init();

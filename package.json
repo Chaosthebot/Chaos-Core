@@ -1,0 +1,9 @@
+{
+  "name": "chaos-core",
+  "version": "1.0.0",
+  "description": "Self-maintenance functionality of ChaosBot",
+  "main": "index.js",
+  "repository": "https://github.com/Chaosthebot/Chaos-Core.git",
+  "author": "ChaosBot contributors",
+  "license": "MIT"
+}
